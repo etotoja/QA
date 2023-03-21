@@ -1,10 +1,12 @@
-import converter
-from converter import *
+#App generating 2 dice rolls (2 numbers 1-6)
 
-#kg_to_lbs(100)
+import random
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
 
-print(converter.lbs_to_kg(100))
 
-#from converter import *
-
-#print(converter.lbs_to_kg(200))
+dice = Dice()
+print(dice.roll())
