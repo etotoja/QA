@@ -43,7 +43,7 @@ if choice == "1":
     currency_code_request = get(f"http://api.nbp.pl/api/exchangerates/rates/a/{currency_code}/?format=json")
 
     api_currency_code = currency_code_request.json()
-    #api_currency_selected2 = api_currency_code["currency"]
+
     print(f'Wybrana waluta: {api_currency_code["currency"]}')
     print(f'Obecny kurs: 1 {api_currency_code["code"].upper()} = {api_currency_code["rates"][0]["mid"]} PLN')
 
@@ -52,11 +52,10 @@ if choice == "1":
     request = get(f"http://api.nbp.pl/api/exchangerates/rates/a/{currency_code}/{currency_date}/?format=json")
 
     api_data = request.json()
-    #if response.status_code != 200:
-    #    continue
-    ##zrob komunikat na wypadek 404
-    #if response.status_code != 404:
-    #    print("W tym dniu ")
+
+
+    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
+
 
     currency_rate = api_data["rates"][0]["mid"]
     print(f'Kurs dla waluty {currency_code.upper()}  ({api_data["currency"]}) w dniu {currency_date}:')
@@ -75,7 +74,12 @@ elif choice == "2":
     date_gold_request = get(f"http://api.nbp.pl/api/cenyzlota/{gold_date}/?format=json")
 
     api_date_gold_request = date_gold_request.json()
-    #if response.status_code != 200:
-    #    continue
+
+
+    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
+            #if response.status_code != 200:
+                #continue
+
+
     print(f'Kurs 1g złota o próbie 1000 w dniu {api_date_gold_request[0]["data"]}: {api_date_gold_request[0]["cena"]} PLN')
     x = input("Wcisnij dowolny klawisz aby zakończyć program.")
