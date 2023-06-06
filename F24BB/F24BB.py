@@ -28,7 +28,7 @@ def calculate_timezone(move):
     # Pobieranie bieżącej daty i czasu
     currenttime = datetime.utcnow() 
 
-    # Parsowanie przesunięcia czasowego w postaci "godziny:minuty"
+    # przesunięcia czasowego w postaci "godziny:minuty"
     hours, minutes = map(int, move.split(':'))
 
     # Tworzenie timedelta na podstawie przesunięcia czasowego
