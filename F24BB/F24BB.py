@@ -11,7 +11,7 @@ fr_api = FlightRadar24API()
 {'17': 57, '16': 66, '15': 43, '14': 52, '13': 62, '12': 73, '11': 64, '10': 66, '9': 73, '8': 69, '7': 59, '6': 56, '5': 61, '4': 27, '3': 0, '2': 0, '1': 0, '0': 0, '23': 0, '22': 0, '21': 19, '20': 31, '19': 10, '18': 10}, 'stats': [57, 66, 
 43, 52, 62, 73, 64, 66, 73, 69, 59, 56, 61, 27, 0, 0, 0, 0, 0, 0, 19, 31, 10, 10]}}}
 
-input_apt = input("Podaj 3 literowy kod IATA albo 4 literowy ICAO lotniska:")
+input_apt = input("Enter 3-letter IATA code or 4-letter ICAO code for chosen airport: ")
 
 selected_apt = input_apt.upper()
 selected_apt_data = fr_api.get_airport(selected_apt)
@@ -25,26 +25,25 @@ apt_city = selected_apt_data['position']['region']['city']
 
 apt_time = selected_apt_data['timezone']['offsetHours'] 
 def calculate_timezone(move):
-    # Pobieranie bieżącej daty i czasu
+    # Getting current date and time in UTC
     currenttime = datetime.utcnow() 
 
-    # przesunięcia czasowego w postaci "godziny:minuty"
+    # Calculating time split in other using "hours:minutes"
     hours, minutes = map(int, move.split(':'))
 
-    # Tworzenie timedelta na podstawie przesunięcia czasowego
+    # Creating timedelta using timesplitting
     delta = timedelta(hours=hours, minutes=minutes)
 
-    # Obliczanie nowego czasu i daty
+    # Calculating new time based on local's user time and offset hours
     new_time_and_date = currenttime + delta
 
+    # Returning new time and date in "HH:MM" format
     return str(new_time_and_date)[11:16]
 
-# Przykładowe wywołanie funkcji z przesunięciem czasowym "apt_time"
-#print(czas_i_data)
+# Function call for selected offset
 apt_localtime = calculate_timezone(apt_time)
 
 
 apt_timezone = selected_apt_data['timezone']['abbr']
-#print(apt_name)
 
 print(f"{apt_name}, also known byt its IATA code {apt_iata} or ICAO code {apt_icao}, lays in {apt_city}, {apt_country}. Local time is {apt_localtime} ")
