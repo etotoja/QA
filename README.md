@@ -24,7 +24,10 @@ My tech stack:
   - TestRail
 
   For programming:
-  - Python (+ Selenium & Appium)
+  - Python
+    - Django
+    - Selenium
+    - Appium
   - VS Code
   - Anaconda
   - Google Colaboratory
@@ -57,7 +60,10 @@ Wykorzystywany przeze mnie stos technologiczny:
   - TestRail
 
   Programowanie:
-  - Python (+ Selenium & Appium)
+  - Python
+    - Django
+    - Selenium
+    - Appium
   - VS Code
   - Anaconda
   - Google Colaboratory
