@@ -1,34 +1,7 @@
-
-#api kursu waluty: http://api.nbp.pl/api/exchangerates/rates/a/<WALUTA>/?format=json
-""" {
-    "table":"A",
-    "currency":"dolar amerykański",
-    "code":"USD",
-    "rates":[
-        {
-            "no":"055/A/NBP/2023",
-    "effectiveDate":"2023-03-20",
-    "mid":4.4130
-        }
-            ]
-    } 
-"""
-##api obecnego kursu zlota: http://api.nbp.pl/api/cenyzlota/?format=json
-"""
-[
-    {
-        "data":"2023-03-22",
-        "cena":274.44
-    }
-]
-"""
-
-###api kursu zlota w dany dzien: http://api.nbp.pl/api/cenyzlota/{gold_date}/?format=json
-
 from requests import get
 
 
-print("Witaj w kalkulatorze kursu walut/złota CurrencuGoldCalc")
+print("Witaj w kalkulatorze kursu walut/złota CurrencyGoldCalc")
 print("Program pobiera dane o aktualnym kursie (w PLN) wybranej waluty bądź złota w danym dniu wykorzystując dane NBP.")
 
 
@@ -54,9 +27,6 @@ if choice == "1":
     api_data = request.json()
 
 
-    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
-
-
     currency_rate = api_data["rates"][0]["mid"]
     print(f'Kurs dla waluty {currency_code.upper()}  ({api_data["currency"]}) w dniu {currency_date}:')
     print(f'1 {currency_code.upper()} = {currency_rate:.2f} PLN')
@@ -74,11 +44,6 @@ elif choice == "2":
     date_gold_request = get(f"http://api.nbp.pl/api/cenyzlota/{gold_date}/?format=json")
 
     api_date_gold_request = date_gold_request.json()
-
-
-    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
-            #if response.status_code != 200:
-                #continue
 
 
     print(f'Kurs 1g złota o próbie 1000 w dniu {api_date_gold_request[0]["data"]}: {api_date_gold_request[0]["cena"]} PLN')
