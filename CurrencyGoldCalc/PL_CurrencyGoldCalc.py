@@ -1,30 +1,3 @@
-
-#api kursu waluty: http://api.nbp.pl/api/exchangerates/rates/a/<WALUTA>/?format=json
-""" {
-    "table":"A",
-    "currency":"dolar amerykański",
-    "code":"USD",
-    "rates":[
-        {
-            "no":"055/A/NBP/2023",
-    "effectiveDate":"2023-03-20",
-    "mid":4.4130
-        }
-            ]
-    } 
-"""
-##api obecnego kursu zlota: http://api.nbp.pl/api/cenyzlota/?format=json
-"""
-[
-    {
-        "data":"2023-03-22",
-        "cena":274.44
-    }
-]
-"""
-
-###api kursu zlota w dany dzien: http://api.nbp.pl/api/cenyzlota/{gold_date}/?format=json
-
 from requests import get
 
 
