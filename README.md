@@ -45,7 +45,6 @@ My tech stack:
 ### PL:
 
 Niniejsze repozytorium jest miejscem dokumentacji mojej wiedzy z zakresu testowania oprogramowania i QA.
-
 Znajdują się tutaj moje personalne projekty, raporty z wykonania prac i kody źródłowe programów napisanych w języku Python.
 
 Wykorzystywany przeze mnie stos technologiczny:
