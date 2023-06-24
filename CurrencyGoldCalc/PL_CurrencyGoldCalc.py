@@ -27,9 +27,6 @@ if choice == "1":
     api_data = request.json()
 
 
-    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
-
-
     currency_rate = api_data["rates"][0]["mid"]
     print(f'Kurs dla waluty {currency_code.upper()}  ({api_data["currency"]}) w dniu {currency_date}:')
     print(f'1 {currency_code.upper()} = {currency_rate:.2f} PLN')
@@ -47,11 +44,6 @@ elif choice == "2":
     date_gold_request = get(f"http://api.nbp.pl/api/cenyzlota/{gold_date}/?format=json")
 
     api_date_gold_request = date_gold_request.json()
-
-
-    ##dodatkowy komunikat na wypadek bledu 404 (albo innego niz 200)??
-            #if response.status_code != 200:
-                #continue
 
 
     print(f'Kurs 1g złota o próbie 1000 w dniu {api_date_gold_request[0]["data"]}: {api_date_gold_request[0]["cena"]} PLN')
