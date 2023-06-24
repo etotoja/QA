@@ -1,9 +1,9 @@
 # QA
 ## Examples / MyStuff
 
-##PL BELOW
+## PL BELOW
 
-###EN:
+### EN:
 
 This repository is a place where I'm documenting my skills in software testing and Quality Assurance.
 Here you can find my personal projects, work reports and source code of my Python apps.
@@ -43,7 +43,7 @@ My tech stack:
 
 
 
-###PL:
+### PL:
 
 Niniejsze repozytorium jest miejscem dokumentacji mojej wiedzy z zakresu testowania oprogramowania i QA.
 
