@@ -7,11 +7,11 @@
 This repository is a place where I'm documenting my skills in software testing and Quality Assurance.
 Here you can find my personal projects, work reports and source code of my Python apps.
 
->AirportCodeDecoder - Decoder for IATA or ICAO airport codes using realtime data.
+>[AirportCodeDecoder](https://github.com/etotoja/QA/tree/main/AirportCodeDecoder) - Decoder for IATA or ICAO airport codes using realtime data.
 >
->CurrencyGoldCalc - NBP currency/gold calculator.
+>[CurrencyGoldCalc](https://github.com/etotoja/QA/tree/main/CurrencyGoldCalc) - NBP currency/gold calculator.
 >
->Certificates - Earned certification.
+>[Certificates](https://github.com/etotoja/QA/tree/main/Certificates) - Earned certification.
 
 My tech stack:
 
