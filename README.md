@@ -48,11 +48,11 @@ My tech stack:
 Niniejsze repozytorium jest miejscem dokumentacji mojej wiedzy z zakresu testowania oprogramowania i QA.
 Znajdują się tutaj moje personalne projekty, raporty z wykonania prac i kody źródłowe programów napisanych w języku Python.
 
->AirportCodeDecoder - Dekoder kodów IATA lub ICAO dla lotnisk, pobiera dane w czasie rzeczywistym.
+>[AirportCodeDecoder](https://github.com/etotoja/QA/tree/main/AirportCodeDecoder) - Dekoder kodów IATA lub ICAO dla lotnisk, pobiera dane w czasie rzeczywistym.
 >
->CurrencyGoldCalc - Kalkulator kursów walut/złota.
+>[CurrencyGoldCalc](https://github.com/etotoja/QA/tree/main/CurrencyGoldCalc) - Kalkulator kursów walut/złota.
 >
->Certificates - Posiadane przeze mnie certyfikaty.
+>[Certificates](https://github.com/etotoja/QA/tree/main/Certificates) - Posiadane przeze mnie certyfikaty.
 
 Wykorzystywany przeze mnie stos technologiczny:
 
