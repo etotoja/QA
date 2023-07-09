@@ -1,14 +1,17 @@
-# QA
-Examples / MyStuff
+# QA - Examples / MyStuff
 
-PL BELOW
+## PL BELOW
 
-
-EN:
+### EN:
 
 This repository is a place where I'm documenting my skills in software testing and Quality Assurance.
-
 Here you can find my personal projects, work reports and source code of my Python apps.
+
+>[AirportCodeDecoder](https://github.com/etotoja/QA/tree/main/AirportCodeDecoder) - Decoder for IATA or ICAO airport codes using realtime data.
+>
+>[CurrencyGoldCalc](https://github.com/etotoja/QA/tree/main/CurrencyGoldCalc) - NBP currency/gold calculator.
+>
+>[Certificates](https://github.com/etotoja/QA/tree/main/Certificates) - Earned certification.
 
 My tech stack:
 
@@ -40,11 +43,16 @@ My tech stack:
 
 
 
-PL:
+### PL:
 
 Niniejsze repozytorium jest miejscem dokumentacji mojej wiedzy z zakresu testowania oprogramowania i QA.
-
 Znajdują się tutaj moje personalne projekty, raporty z wykonania prac i kody źródłowe programów napisanych w języku Python.
+
+>[AirportCodeDecoder](https://github.com/etotoja/QA/tree/main/AirportCodeDecoder) - Dekoder kodów IATA lub ICAO dla lotnisk, pobiera dane w czasie rzeczywistym.
+>
+>[CurrencyGoldCalc](https://github.com/etotoja/QA/tree/main/CurrencyGoldCalc) - Kalkulator kursów walut/złota.
+>
+>[Certificates](https://github.com/etotoja/QA/tree/main/Certificates) - Posiadane przeze mnie certyfikaty.
 
 Wykorzystywany przeze mnie stos technologiczny:
 
