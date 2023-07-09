@@ -14,6 +14,8 @@ ICAO:
 
 IATA code is tied with specific airport, is mainly used in airline travel industry, covering schedules, flight statuses, baggage tags, ticketing and booking, etc. They're more most recognized codes due to their use by airlines to provide services for passengers. IATA codes are also assigned to some other locations tied to travel, like train and bus stations (my app doesn't cover them).
 
-ICAO code covers more wide purpose of civil aviation operations, including general and business aviation. ICAO codes are used on air traffic control (ATC) flight plans and in air navigation services. They're heavily used by pilots, dispatchers rather than passengers and people strict connected to them like check-in staff or customer service. This code is connected more to location than airport: 
-EPWA - E-Europe/P-Poland/WA-Warsaw 
+ICAO code covers more wide purpose of civil aviation operations, including general and business aviation. ICAO codes are used on air traffic control (ATC) flight plans and in air navigation services. They're heavily used by pilots, dispatchers rather than passengers and people strict connected to them like check-in staff or customer service. This code is connected more to location than airport:
+
+EPWA - E-Europe/P-Poland/WA-Warsaw
+
 OMDB - O-Persian Gulf/M-United Arab Emirates/DB-Dubai 
